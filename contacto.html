@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	<title>SAC-Data Sistemas Informaticos</title>
+	
+	<link rel="stylesheet" href="bolierplate.css">
+	<link rel="stylesheet" href="Skeleton-2/css/normalize.css">
+	<link rel="stylesheet" href="Skeleton-2/css/skeleton.css">
+	<link rel="stylesheet" href="skeleton.css">
+	<link rel="stylesheet" href="skeleton-mobile.css">
+	<link rel="stylesheet" href="flexslider.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="estilos-sacdata.css">
+	
+
+	<link href='http://fonts.googleapis.com/css?family=Just+Another+Hand' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Orbitron:400,900' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'> 
+  	<!-- <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
+	<!-- <link rel="stylesheet" href="bootstrap.css"> -->
+
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+    <script>
+		var map;
+		function initialize() {
+		  map = new google.maps.Map(document.getElementById('map'), {
+		    zoom: 16,
+		    center: {lat: -34.4903291, lng: -59.0748434}
+		  });
+		}
+
+		google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+
+
+    
+    <style>
+		.forms{
+			padding: 6rem 0;
+		}
+		
+		.form-header{
+			color: #404040;
+			font: 800 24px/30px "Open Sans",sans-serif;
+			margin-bottom: 15px;
+			text-transform: uppercase;			
+		}
+
+		h4 {
+		    color: #404040;
+		    font: 400 18px/22px "Open Sans",sans-serif;
+		    margin-bottom: 10px;
+		}
+		
+		.margen{
+			margin: 35px 5px 10px; 
+		}
+
+		div.six.columns p{
+			font-size: 14px;
+		}
+
+	
+		div.six.columns h2{
+			border-bottom: 1px solid #CCC;
+		}
+
+		#map{
+			height: 400px;
+			width: 100%;
+		}
+
+
+
+		.container12{
+			position: relative;
+			max-width: 1200px;
+			width: 100%;
+		}
+
+		.envolvente-ppal{
+			padding: 5px;
+			margin: 0px;
+			border:none;
+			position: relative;
+		}
+		
+		.header-container{
+			max-width: 1200px;
+			width: 100%;
+			margin: 10px auto;
+		}		
+		
+		.margen-container{
+			max-width: 1170px;
+			width: 100%;
+			margin: 10px auto;
+		}
+	
+		.margen-top{
+			margin-top: 30px;
+		}
+
+    </style>
+
+
+</head>
+
+<body>
+	<div class="seccion-encabezado">
+		<div class="wrapper-1" >
+			<div class="columna-1">
+				<div class="logo">
+					<img class="img-logo" src="SAC-Data.png" alt="">
+				</div>
+			</div>
+
+			<div class="columna-2" >
+				<!-- <nav >		 -->
+					<ul class="menu">
+					  <li><a href="URL_enlace_1"> Inicio </a></li>
+					  <li>
+					    <a href="#"> Nosotros </a>
+					  </li>
+					  <li>
+					  	<a href="URL_enlace_3"> Servicios </a>
+					    <ul style="">
+					      <li><a href="URL_enlace_2.1"> texto_submenú_2.1 </a></li>
+					      <li><a href="URL_enlace_2.2"> texto_submenú_2.2 </a></li>
+					      <li><a href="URL_enlace_2.3"> texto_submenú_2.3 </a></li>
+					    </ul>
+					  </li>
+					  <li><a href="URL_enlace_3"> Contacto </a></li>
+					</ul>	
+				</nav>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+
+	<div class="envolvente-ppal">
+
+		<div class="header-container">
+			
+			<div class="margen-container">
+				<div class="container">
+					<div class="row">
+						<h2 class="margen-top">Nuestra Ubicacion</h2>
+					</div>
+				</div>
+				<div class="u-full-width" style="padding: 0 1.25em">
+					<div id="map" class="u-full-width"></div>
+				</div>					
+			</div>
+		</div>
+
+
+		<div class="container">
+			<div class="forms">
+				<div class="row">
+					<div class="six columns">
+						<h2 class="form-header">Formulario de contacto</h2>
+						<h4>Dejenos sus dudas inquietudes o sugerencias. Por favor rellene el formulario, y nos pondremos en contacto a la brevedad con ud.</h4>				
+						<form>
+						  <div class="row">
+						    <div class="six columns">
+						      <label for="exampleEmailInput">Su correo electronico</label>
+						      <input class="u-full-width" placeholder="test@mailbox.com" id="exampleEmailInput" type="email">
+						    </div>
+						    <div class="six columns">
+						      <label for="exampleRecipientInput">Motivo de Contacto</label>
+						      <select class="u-full-width" id="exampleRecipientInput">
+						        <option value="Option 1">Consultas</option>
+						        <option value="Option 2">Admiration</option>
+						        <option value="Option 3">Can I get your number?</option>
+						      </select>
+						    </div>
+						  </div>
+						  <label for="exampleMessage">Mensaje</label>
+						  <textarea class="u-full-width" placeholder="Hola..." id="exampleMessage"></textarea>
+						  <label class="example-send-yourself-copy">
+						    <input type="checkbox">
+						    <span class="label-body">Enviese una copia</span>
+						  </label>
+						  <input class="button-primary" value="Enviar" type="submit">
+						</form>					
+					</div>
+					<div class="six columns">
+						<h2 class="form-header">Informacion de contacto</h2>
+						<h4>Nuestras oficinas se encuentran en:</h4>
+						<p>
+							SAC-Data Sistemas Informaticos <br> Corrientes 978 <br> Open Door, Lujan, <br>CP:B6708AWT
+						</p>
+						<p>Telefono: 02323-441585 <br>Fax:02323-441585 <br>E-Mail: <a href="mailto:info@sacdata.com.ar?subject=feedback" "email me">info@sacdata.com.ar</a>  </p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	
+
+
+
+
+
+
+
+	<footer >
+		<div class="container-12">
+			<div class="footer-top grid-12">
+				<div class="grid-8">
+					<ul class="menu-footer">
+						<li><a href="">Inicio</a></li>
+						<li><a href="">Nosotros</a></li>
+						<li><a href="">Servicios</a></li>
+						<li><a href="">Contacto</a></li>
+					</ul>
+				</div>
+				<div class="grid-4" >
+					<dl>
+						<dd>
+							<div class="social-footer">
+								<a href=""><i class="fa fa-facebook"></i></a>
+								<a href=""><i class="fa fa-twitter"></i></a>
+								<a href=""><i class="fa fa-linkedin"></i></a>
+								<a href=""><i class="fa fa-github"></i></a>
+								<a href=""><i class="fa fa-google-plus"></i></a>
+							</div>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<div class="footer-bottom grid-12">
+				<div class="grid-6 margen-left">
+					<ul class="menu-copyright">
+						<li>&copy SAC-Data 2015</li>
+						<li><a href="mailto:info@sacdata.com.ar?subject=feedback">info@sacdata.com.ar</a></li>
+					</ul>
+				</div>
+				<div class="grid-6 omega" >
+					<ul class="menu-copyright">
+						<li>Developed by: ADS-Software.com.ar</li>
+						<li><a href="mailto:info@adssoftware.com.ar?subject=feedback">info@adssoftware.com.ar</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<!-- jQuery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+	<!-- FlexSlider -->
+	<script defer src="js/jquery.flexslider.js"></script>
+
+	<script type="text/javascript">
+	    $(function(){
+	      SyntaxHighlighter.all();
+	    });
+	    $(window).load(function(){
+	      $('.flexslider').flexslider({
+	        animation: "fade",
+	        directionNav: false,
+	        start: function(slider){
+	          $('body').removeClass('loading');
+	        }
+	      });
+	    });
+	</script>
+
+</body>
+</html>
